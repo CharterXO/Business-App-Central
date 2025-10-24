@@ -1,31 +1,33 @@
 {
   "name": "business-app-central",
-  "private": true,
   "version": "0.2.0",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "migrate": "tsx scripts/migrate.ts",
     "seed": "tsx scripts/seed.ts"
   },
   "dependencies": {
-    "@vercel/blob": "0.24.0",
-    "@vercel/postgres": "0.8.0",
+    "@vercel/blob": "latest",
+    "@vercel/postgres": "latest",
     "bcryptjs": "2.4.3",
     "jsonwebtoken": "9.0.2",
     "next": "14.2.8",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
-  },
-  "devDependencies": {
-    "@types/jsonwebtoken": "9.0.5",
-    "@types/node": "20.11.24",
-    "@types/react": "18.3.3",
-    "autoprefixer": "10.4.20",
-    "postcss": "8.4.47",
+    "react-dom": "18.3.1",
     "tailwindcss": "3.4.14",
+    "postcss": "8.4.47",
+    "autoprefixer": "10.4.20",
     "tsx": "4.19.1",
     "typescript": "5.5.4"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "2.4.6",
+    "@types/jsonwebtoken": "9.0.5",
+    "@types/node": "20.11.24",
+    "@types/react": "18.3.3"
   }
 }
